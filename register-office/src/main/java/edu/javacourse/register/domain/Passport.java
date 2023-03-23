@@ -1,5 +1,10 @@
 package edu.javacourse.register.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,7 +16,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.time.LocalDate;
-
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "ro_passport")
 @Entity
 public class Passport
@@ -32,51 +40,4 @@ public class Passport
     @Column(name = "issue_department")
     private String issueDepartment;
 
-    public Long getPassportId() {
-        return passportId;
-    }
-
-    public void setPassportId(Long passportId) {
-        this.passportId = passportId;
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
-
-    public String getSeria() {
-        return seria;
-    }
-
-    public void setSeria(String seria) {
-        this.seria = seria;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public LocalDate getIssueDate() {
-        return issueDate;
-    }
-
-    public void setIssueDate(LocalDate issueDate) {
-        this.issueDate = issueDate;
-    }
-
-    public String getIssueDepartment() {
-        return issueDepartment;
-    }
-
-    public void setIssueDepartment(String issueDepartment) {
-        this.issueDepartment = issueDepartment;
-    }
 }
