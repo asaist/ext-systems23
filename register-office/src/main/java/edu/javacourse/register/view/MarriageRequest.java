@@ -1,11 +1,15 @@
 package edu.javacourse.register.view;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 import java.time.LocalDate;
-
+@Setter
+@Getter
 public class MarriageRequest implements Serializable
 {
-    private String husbandSurename;
+    private String husbandSurname;
     private String husbandGivenname;
     private String husbandPatronymic;
     private LocalDate husbandDateBirth;
