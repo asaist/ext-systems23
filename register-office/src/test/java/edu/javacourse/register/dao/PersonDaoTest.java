@@ -19,13 +19,13 @@ public class PersonDaoTest {
             System.out.println("Class for sex:" + person.getClass().getName());
             System.out.println("Passports:" + person.getPassports().size());
             System.out.println("Birth:" + person.getBirthCertificate());
-            if (person instanceof PersonMale){
-                System.out.println( "Birth Cert:" + ((PersonMale) person).getBirthCertificates().size() );
-                System.out.println( "Marriage Cert" + ((PersonMale) person).getMarriageCertificates().size() );
-            } else {
-                System.out.println( "Birth Cert:" + ((PersonFemale) person).getBirthCertificates().size() );
-                System.out.println(  "Marriage Cert" + ((PersonFemale) person).getMarriageCertificates().size() );
-            }
+//            if (person instanceof PersonMale){
+//                System.out.println( "Birth Cert:" + ((PersonMale) person).getBirthCertificates().size() );
+//                System.out.println( "Marriage Cert" + ((PersonMale) person).getMarriageCertificates().size() );
+//            } else {
+//                System.out.println( "Birth Cert:" + ((PersonFemale) person).getBirthCertificates().size() );
+//                System.out.println(  "Marriage Cert" + ((PersonFemale) person).getMarriageCertificates().size() );
+//            }
         });
     }
 
