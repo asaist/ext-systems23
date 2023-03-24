@@ -8,10 +8,10 @@ import java.util.List;
 public class PersonMale extends Person
 {
     @OneToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.LAZY,
-            mappedBy = "father")
+            mappedBy = "husband")
     private List<MarriageCertificate> marriageCertificates;
     @OneToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.LAZY,
-            mappedBy = "husband")
+            mappedBy = "father")
     private List<BirthCertificate> birthCertificates;
 
     public List<MarriageCertificate> getMarriageCertificates() {

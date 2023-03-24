@@ -33,5 +33,4 @@ public class BirthCertificate
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinColumn(name = "mother_id")
     private PersonFemale mother;
-
 }

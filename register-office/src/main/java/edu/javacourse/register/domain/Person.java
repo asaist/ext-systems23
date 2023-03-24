@@ -37,7 +37,7 @@ public class Person
     @Column(name = "date_birth")
     private LocalDate dateOfBirth;
     @OneToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.LAZY,
-              mappedBy = "person")
+            mappedBy = "person")
     private BirthCertificate birthCertificate;
     @OneToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.LAZY,
             mappedBy = "person")
