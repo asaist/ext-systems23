@@ -16,15 +16,5 @@
         <module name="network" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="api" target="1.8" />
-      <module name="city-register" target="1.8" />
-      <module name="client" target="1.8" />
-      <module name="handlers" target="1.8" />
-      <module name="network" target="1.8" />
-      <module name="network-tcp" target="1.8" />
-      <module name="register-office" target="1.8" />
-      <module name="server" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

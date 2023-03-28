@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/network-tcp/api/api.iml" filepath="$PROJECT_DIR$/network-tcp/api/api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/city-register/city-register.iml" filepath="$PROJECT_DIR$/city-register/city-register.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network-tcp/client/client.iml" filepath="$PROJECT_DIR$/network-tcp/client/client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ext-systems.iml" filepath="$PROJECT_DIR$/.idea/ext-systems.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network-tcp/handlers/handlers.iml" filepath="$PROJECT_DIR$/network-tcp/handlers/handlers.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network/network.iml" filepath="$PROJECT_DIR$/network/network.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network-tcp/network-tcp.iml" filepath="$PROJECT_DIR$/network-tcp/network-tcp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/register-office/register-office.iml" filepath="$PROJECT_DIR$/register-office/register-office.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network-tcp/server/server.iml" filepath="$PROJECT_DIR$/network-tcp/server/server.iml" />
     </modules>
   </component>
 </project>
