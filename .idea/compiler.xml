@@ -9,8 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="server" />
         <module name="register-office" />
-        <module name="handlers" />
         <module name="city-register" />
+        <module name="handlers" />
         <module name="client" />
         <module name="api" />
         <module name="network" />
