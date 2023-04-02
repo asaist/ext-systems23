@@ -4,8 +4,7 @@ import edu.javacourse.register.dao.MarriageDao;
 import edu.javacourse.register.dao.PersonDao;import edu.javacourse.register.domain.MarriageCertificate;
 import edu.javacourse.register.domain.Person;
 import edu.javacourse.register.domain.PersonFemale;
-import edu.javacourse.register.domain.PersonMale;
-import edu.javacourse.register.view.MarriageRequest;
+import edu.javacourse.register.domain.PersonMale;import edu.javacourse.register.view.MarriageRequest;
 import edu.javacourse.register.view.MarriageResponse;
 import lombok.Setter;
 import org.slf4j.Logger;
@@ -16,8 +15,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDate;
-import java.util.List;
+import java.time.LocalDate;import java.util.List;
+
 
 @Service("marriageService")
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
@@ -40,7 +39,7 @@ public class MarriageManager
         personDao.addPerson(getPerson(1));
         personDao.addPerson(getPerson(2));
         MarriageCertificate mc = getMarriageCertificate();
-        marriageDao.saveAllAndFlush(mc);
+        marriageDao.saveAndFlush(mc);
         marriageDao.findAll();
 
         return  new MarriageResponse();
@@ -53,7 +52,7 @@ public class MarriageManager
         mc.setNumber("12345");
         mc.setActive(true);
 
-        List<Person> persons = personDao.findPersons();
+    List<Person> persons = personDao.findPersons();
         for (Person person : persons){
             if (person instanceof PersonMale){
                 mc.setHusband((PersonMale)person );
