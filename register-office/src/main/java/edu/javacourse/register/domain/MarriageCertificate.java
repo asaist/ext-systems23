@@ -14,6 +14,8 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Table(name = "ro_marriage_certificate")
 @Entity
+@NamedQuery(name = "MarriageCertificate.findByNum",
+            query = "SELECT mc FROM MarriageCertificate mc WHERE mc.number = :number")
 public class MarriageCertificate
 {
     @Id
